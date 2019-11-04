@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="52a92b7f-8d01-42de-b638-4e38ed36702a" name="Default Changelist" comment="" />
+    <list default="true" id="52a92b7f-8d01-42de-b638-4e38ed36702a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/DynamicFileTreePane.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/DynamicFileTreePane.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/FindButtonListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/FindButtonListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/GUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/GUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/OccurrencesInFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mulaev/ardnya/App/OccurrencesInFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/LogReader-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/LogReader-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/DynamicFileTreePane.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/FindButtonListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/FindButtonListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/GUI$FoundTextArea.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/GUI$FoundTextArea.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/GUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/GUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/OccurrencesInFile.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mulaev/ardnya/App/OccurrencesInFile.class" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +30,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
       <MavenImportingSettings>
@@ -24,7 +41,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1SsNVJTmrNpncySbtR0z5e5Jyxr" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -63,5 +82,18 @@
       <updated>1572287203030</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

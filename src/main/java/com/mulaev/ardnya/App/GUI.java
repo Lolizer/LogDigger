@@ -1,14 +1,18 @@
 package com.mulaev.ardnya.App;
 
+import org.apache.commons.net.ftp.FTPClient;
+import org.apache.commons.net.ftp.FTPFile;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.ListIterator;
 
 public class GUI extends JFrame {
     JPanel upperPanel;
     JPanel centralPanel;
-    DynamicFileTreePane fileTree;
+    volatile DynamicFileTreePane fileTree;
 
     //upper panel content
     JTextArea searchArea;
@@ -16,6 +20,7 @@ public class GUI extends JFrame {
     JTextField fileType;
     JButton fileDialogButton;
     JButton findButton;
+
 
     //central panel content
     FoundTextArea foundText;
@@ -35,7 +40,7 @@ public class GUI extends JFrame {
         filePath = new JTextField(5);
         fileType = new JTextField(5);
         fileDialogButton = new JButton("Browse");
-        findButton = new JButton("Find");
+        findButton = new FindButton("Find");
             //central
         foundText = new FoundTextArea(5, 10);
         next = new JButton("Next");
@@ -120,6 +125,7 @@ public class GUI extends JFrame {
 
         searchArea.setLineWrap(true);
         searchArea.setWrapStyleWord(true);
+        filePath.setToolTipText("<html>FTP sample:<br>ftp:login:pass@ip[@remote_path]</html>");
 
         fileDialogButton.addActionListener(new FileDialogListener());
         findButton.addActionListener(new FindButtonListener());
@@ -168,6 +174,9 @@ public class GUI extends JFrame {
         });
 
         previous.addActionListener((e) -> {
+            if (foundText.getText().equals(""))
+                return;
+
             Integer start = foundText.getPrevious();
 
             if (start == null)
@@ -178,6 +187,9 @@ public class GUI extends JFrame {
         });
 
         next.addActionListener((e) -> {
+            if (foundText.getText().equals(""))
+                return;
+
             Integer start = foundText.next();
 
             if (start == null)
@@ -216,5 +228,13 @@ public class GUI extends JFrame {
                 return iterator.previous();
             return null;
         }
+    }
+
+    class FindButton extends JButton {
+        FTPClient client;
+        HashMap<FTPFile,String> paths;
+
+        private FindButton() {super();}
+        private FindButton(String name) {super(name);}
     }
 }
